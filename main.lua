@@ -9,6 +9,13 @@
 
 WTFTHISSTUPIDGAME_VERSION = '1.0'
 
+colors = {
+    {r=0x88,g=0xff,b=0x00},
+    {r=0xff,g=0x00,b=0xbb},
+    {r=0x00,g=0xff,b=0xee},
+    {r=0xfb,g=0xff,b=0x00}
+}
+
 function love.load()
     print("wtf this stupid game by younishd\nversion " .. WTFTHISSTUPIDGAME_VERSION)
     love.window.setMode(600, 600)
@@ -100,11 +107,12 @@ function yep()
 end
 
 function crazyflash()
+    c = colors[math.random(1, #colors)]
     if flash then
-        love.graphics.setColor(0, 0, 0, 255)
-        love.graphics.setBackgroundColor(0, 255, 0)
+        love.graphics.setColor(0, 0, 0, 0xff)
+        love.graphics.setBackgroundColor(c.r, c.g, c.b)
     else
-        love.graphics.setColor(0, 255, 0, 255)
+        love.graphics.setColor(c.r, c.g, c.b, 0xff)
         love.graphics.setBackgroundColor(0, 0, 0)
     end
 end
