@@ -7,7 +7,7 @@
 -- file that was distributed with this source code.
 --]]
 
-WTFTHISSTUPIDGAME_VERSION = '1.0'
+WTFTHISSTUPIDGAME_VERSION = '1.1'
 
 colors = {
     {r=0x88,g=0xff,b=0x00},
