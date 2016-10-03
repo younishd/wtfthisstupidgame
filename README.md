@@ -6,7 +6,7 @@ A game that makes you think _WTF this is stupid_.
 
 Left/right click if you see the rectangle on the left/right. Yep, that's it. Please don't judge me.
 
-!["that score is horrible btw"](screenshot.png "that score is horrible btw")
+!["wtf gameplay demo"](wtfdemo.gif "wtf gameplay demo")
 
 ## How to install
 
