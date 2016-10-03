@@ -18,6 +18,7 @@ colors = {
 
 function love.load()
     print("wtf this stupid game by younishd\nversion " .. WTFTHISSTUPIDGAME_VERSION)
+    math.randomseed(os.time())
     love.window.setMode(600, 600)
     love.window.setTitle("wtf this stupid game by younishd")
     running = false
@@ -27,7 +28,9 @@ function love.load()
     lastscore = 0
     highscore = 0
     next = -1
-    flash = false
+    flash = true
+    flashcolor = 0
+    toggleflash()
     h1font = love.graphics.newFont(32)
     h2font = love.graphics.newFont(26)
     h3font = love.graphics.newFont(18)
@@ -103,16 +106,20 @@ end
 function yep()
     score = score + 1
     next = math.random(0, 1)
+    toggleflash()
+end
+
+function toggleflash()
     flash = not flash
+    flashcolor = colors[math.random(1, #colors)]
 end
 
 function crazyflash()
-    c = colors[math.random(1, #colors)]
     if flash then
         love.graphics.setColor(0, 0, 0, 0xff)
-        love.graphics.setBackgroundColor(c.r, c.g, c.b)
+        love.graphics.setBackgroundColor(flashcolor.r, flashcolor.g, flashcolor.b)
     else
-        love.graphics.setColor(c.r, c.g, c.b, 0xff)
+        love.graphics.setColor(flashcolor.r, flashcolor.g, flashcolor.b, 0xff)
         love.graphics.setBackgroundColor(0, 0, 0)
     end
 end
