@@ -7,7 +7,10 @@
 -- file that was distributed with this source code.
 --]]
 
+WTFTHISSTUPIDGAME_VERSION = '1.0'
+
 function love.load()
+    print("wtf this stupid game by younishd\nversion " .. WTFTHISSTUPIDGAME_VERSION)
     love.window.setMode(600, 600)
     love.window.setTitle("wtf this stupid game by younishd")
     running = false
