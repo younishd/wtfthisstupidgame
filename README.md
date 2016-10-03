@@ -12,7 +12,7 @@ Left/right click if you see the rectangle on the left/right. Yep, that's it. Ple
 
 ### Windows
 
-1. Download the game [here](https://github.com/younishd/wtfthisstupidgame/releases/download/v1.0/wtfthisgame-win32.zip).
+1. Download the game [here](https://github.com/younishd/wtfthisstupidgame/releases/download/v1.1/wtfthisgame-win32.zip).
 2. Extract it
 3. Run `wtfthisstupidgame.exe`
 
